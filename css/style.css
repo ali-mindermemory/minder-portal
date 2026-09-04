@@ -1637,3 +1637,47 @@ a:focus-visible {
     bottom: 76px;
   }
 }
+
+
+.rating-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.rating-options label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-options label:hover {
+    background: #f5f5f5;
+}
+
+.evaluation-warning {
+    margin-top: 12px;
+    padding: 12px 15px;
+    border: 1px solid #d63638;
+    border-radius: 5px;
+    background: #fff5f5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.evaluation-item label {
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.evaluation-item input[type="checkbox"],
+.evaluation-item input[type="radio"] {
+    margin-right: 6px;
+}
