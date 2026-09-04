@@ -1681,3 +1681,9 @@ a:focus-visible {
 .evaluation-item input[type="radio"] {
     margin-right: 6px;
 }
+#accordion-item-4 h6.heading-298 {
+    margin-bottom: 15px;
+}
+#accordion-item-4 img.image-373 {
+    display: none;
+}
