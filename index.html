@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Patient developmental evaluation portal"
+    />
+    <title>Minder Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-light">
+    <main aria-label="Patient evaluation portal" class="main-section">
+      <aside aria-label="Patient journey" class="side-bar">
+        <div class="side-bar-box">
+          <div class="div-block-764">
+            <div>
+              <img
+                alt="Patient profile"
+                class="image-328"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="images/33f515c2565ff82bcc0e16df3ff46ec045d896ae.png"
+              />
+            </div>
+            <div class="patient-name">
+              <h4 class="heading-294">Hi, Jane</h4>
+              <div class="evaluation-type">Developmental evaluation</div>
+            </div>
+          </div>
+          <div class="journey-block">
+            <h5 class="heading-295">Your journey</h5>
+            <ol aria-label="Evaluation journey" class="div-block-765">
+              <li class="steps">
+                <div class="completeed-step">
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    class="image-329"
+                    decoding="async"
+                    loading="lazy"
+                    src="images/icons8-tick-32.png"
+                  />
+                </div>
+                <div class="step-text">INTAKE</div>
+              </li>
+              <li class="steps">
+                <div class="ripple">
+                  <div aria-current="step" class="current-step">
+                    <div class="step-count">2</div>
+                  </div>
+                </div>
+                <div class="step-text">EVALUATION</div>
+              </li>
+              <li class="steps">
+                <div class="next-step">
+                  <div class="step-count text-white">3</div>
+                </div>
+                <div class="step-text">FEEDBACK</div>
+              </li>
+              <li class="steps">
+                <div class="next-step">
+                  <div class="step-count text-white">4</div>
+                </div>
+                <div class="step-text">REPORT</div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </aside>
+      <section aria-label="Evaluation details" class="ev-section">
+        <div class="ev-main">
+          <nav aria-label="Portal sections" class="tab-row" role="tablist">
+            <button
+              aria-controls="intake"
+              aria-selected="true"
+              class="tab-btn active"
+              data-tab="intake"
+              id="tab-intake"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              Intake
+            </button>
+            <button
+              aria-controls="appointments"
+              aria-selected="false"
+              class="tab-btn"
+              data-tab="appointments"
+              id="tab-appointments"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Appointments
+            </button>
+            <button
+              aria-controls="reports"
+              aria-selected="false"
+              class="tab-btn"
+              data-tab="reports"
+              id="tab-reports"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Report
+            </button>
+          </nav>
+          <div
+            aria-labelledby="tab-intake"
+            class="tab-content active"
+            id="intake"
+            role="tabpanel"
+            tabindex="0"
+          >
+            <div class="card">
+              <div class="progress-box">
+                <h6 class="heading-299">progress</h6>
+                <div class="div-block-773">
+                  <div class="progress-overlay"></div>
+                </div>
+                <div class="text-block-349">
+                  <strong> 1 of 3 done </strong>
+                </div>
+              </div>
+            </div>
+            <div class="acc-items-block">
+              <div class="card item-acc" id="accordion-item-1">
+                <div class="acc-flex">
+                  <div class="acc-left">
+                    <div class="left-inner">
+                      <div class="acc-number">
+                        <div>1</div>
+                      </div>
+                      <div class="big-icon">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          class="image-370"
+                          decoding="async"
+                          loading="lazy"
+                          src="images/icons8-check-document-96.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-right">
+                    <div class="acc-header" data-accordion-trigger="">
+                      <div>
+                        <h5 class="heading-300">
+                          <strong> Consent & Authorization </strong>
+                        </h5>
+                        <div class="text-block-343">
+                          Please review and complete the required documents
+                          below.
+                        </div>
+                      </div>
+                      <div class="div-block-950">
+                        <div class="text-block-350 green-badge">
+                          3 of 4 Complete
+                        </div>
+                        <button
+                          aria-controls="accordion-panel-1"
+                          aria-expanded="false"
+                          aria-label="Toggle Agreements &amp; Authorizations"
+                          class="chev acc-toggle"
+                          id="accordion-toggle-1"
+                          type="button"
+                        >
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            class="image-371"
+                            decoding="async"
+                            loading="lazy"
+                            src="images/icons8-angle-down-26.png"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      aria-labelledby="accordion-toggle-1"
+                      class="acc-content"
+                      hidden=""
+                      id="accordion-panel-1"
+                      role="region"
+                    >
+                      <div class="div-block-774 _774-2">
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-insurance-30.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong> Consent & Policies </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 5 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 green-badge">
+                              Completed
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-lock-50.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong> Release of Information (ROI) </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 2 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 blue-badge">
+                              In Progress
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card item-acc" id="accordion-item-2">
+                <div class="acc-flex">
+                  <div class="acc-left">
+                    <div class="left-inner">
+                      <div class="acc-number acc-blue-bg">
+                        <div>2</div>
+                      </div>
+                      <div class="big-icon bi-blue-bg">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          class="image-370"
+                          decoding="async"
+                          loading="lazy"
+                          src="images/icons8-umbrella-50.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-right">
+                    <div class="acc-header" data-accordion-trigger="">
+                      <div>
+                        <h5 class="heading-300">
+                          <strong> Insurance &amp; Payments </strong>
+                        </h5>
+                        <div class="text-block-343">
+                          Help us verify your coverage and prepare for costs.
+                        </div>
+                      </div>
+                      <div class="div-block-950">
+                        <div class="text-block-350 yellow-badge">In Review</div>
+                        <button
+                          aria-controls="accordion-panel-2"
+                          aria-expanded="false"
+                          aria-label="Toggle Insurance &amp; Payments"
+                          class="chev acc-toggle"
+                          id="accordion-toggle-2"
+                          type="button"
+                        >
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            class="image-371"
+                            decoding="async"
+                            loading="lazy"
+                            src="images/icons8-angle-down-26.png"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      aria-labelledby="accordion-toggle-2"
+                      class="acc-content"
+                      hidden=""
+                      id="accordion-panel-2"
+                      role="region"
+                    >
+                      <div class="div-block-774 _774-2">
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-insurance-30.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong> Provide Insurance Information </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 2 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 green-badge">
+                              Completed
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-clipboard-48.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong> Insurance Benefits Review </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 2 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 yellow-badge">
+                              In Review
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                        <a class="todo" href="#">
+                          <div class="div-block-954">
+                            <div class="div-block-953">
+                              <div class="div-block-771">
+                                <div class="div-block-772 coming-box">
+                                  <img
+                                    alt=""
+                                    aria-hidden="true"
+                                    class="image-330"
+                                    decoding="async"
+                                    loading="lazy"
+                                    src="images/icons8-invoice-48.png"
+                                  />
+                                </div>
+                                <div>
+                                  <h6 class="heading-298">
+                                    <strong> Payment </strong>
+                                  </h6>
+                                  <div class="div-block-1041">
+                                    <img
+                                      src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                      loading="lazy"
+                                      alt=""
+                                      class="image-387"
+                                    />
+                                    <div>Approximately 2 minutes<br /></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="div-block-952">
+                                <div class="text-block-350 coming-badge">
+                                  pending
+                                </div>
+                                <div>
+                                  <img
+                                    alt=""
+                                    aria-hidden="true"
+                                    class="image-371"
+                                    decoding="async"
+                                    loading="lazy"
+                                    src="images/icons8-forward-30.png"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="div-block-955">
+                              <div class="div-block-956">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-372"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-info-50.png"
+                                />
+                              </div>
+                              <div>
+                                Payment will be available after your insurance
+                                information is received and reviewed. If a
+                                patient responsibility amount is expected,
+                                payment will be available after benefits
+                                verification.
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card item-acc" id="accordion-item-3">
+                <div class="acc-flex">
+                  <div class="acc-left">
+                    <div class="left-inner">
+                      <div class="acc-number acc-yellow-bg">
+                        <div>3</div>
+                      </div>
+                      <div class="big-icon bi-yellow-bg">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          class="image-370"
+                          decoding="async"
+                          loading="lazy"
+                          src="images/icons8-member-50.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-right">
+                    <div class="acc-header" data-accordion-trigger="">
+                      <div>
+                        <h5 class="heading-300">
+                          <strong>
+                            Background &amp; Referral Information
+                          </strong>
+                        </h5>
+                        <div class="text-block-343">
+                          Tell us more about your concerns, history and referral
+                          source.
+                        </div>
+                      </div>
+                      <div class="div-block-950">
+                        <div class="text-block-350 green-badge">
+                          2 of 3 Complete
+                        </div>
+                        <button
+                          aria-controls="accordion-panel-3"
+                          aria-expanded="false"
+                          aria-label="Toggle Background &amp; Referral Information"
+                          class="chev acc-toggle"
+                          id="accordion-toggle-3"
+                          type="button"
+                        >
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            class="image-371"
+                            decoding="async"
+                            loading="lazy"
+                            src="images/icons8-angle-down-26.png"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      aria-labelledby="accordion-toggle-3"
+                      class="acc-content"
+                      hidden=""
+                      id="accordion-panel-3"
+                      role="region"
+                    >
+                      <div class="div-block-774 _774-2">
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-insurance-30.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong>
+                                  Referring Provider Information
+                                </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 2 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 green-badge">
+                              Completed
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                        <a class="todo" href="#">
+                          <div class="div-block-771">
+                            <div class="div-block-772 coming-box">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-330"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-lock-50.png"
+                              />
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                <strong> Intake Questionnaire </strong>
+                              </h6>
+                              <div class="div-block-1041">
+                                <img
+                                  src="https://cdn.prod.website-files.com/633f442ba675599bc6694376/6a5f69ecca61ea8cbdccbe65_Icon%20(9).svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="image-387"
+                                />
+                                <div>Approximately 20 minutes<br /></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="div-block-952">
+                            <div class="text-block-350 blue-badge">
+                              In Progress
+                            </div>
+                            <div>
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-371"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-forward-30.png"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                        <a class="todo symptom-inventories" href="#">
+                          <div class="todo symptom-block ">
+                            <div class="div-block-771">
+                              <div class="div-block-772 coming-box">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-330"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-insurance-64-1.png"
+                                />
+                              </div>
+
+                              <div>
+                                <h6 class="heading-298">
+                                  <strong>Symptom Inventories</strong>
+                                </h6>
+                              </div>
+                            </div>
+
+                            <div class="div-block-952">
+                              <div class="text-block-350 coming-badge">
+                                Not Started
+                              </div>
+
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-371"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- ONLY FOR SYMPTOM INVENTORIES -->
+                          <div class="symptom-inventory-list">
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                MIGDAS Parent Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BAARS Self Report
+                              </div>
+                              <div class="symptom-inventory-status in-progress">
+                                In Progress
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 10 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BRIEF-2 Parent/Teacher
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                SRS-2 Self Report
+                              </div>
+                              <div class="symptom-inventory-status completed">
+                                Completed
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 10 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BASC-3 Self Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BRIEF-Preschool
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                ABAS-3 Parent Form
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                ABAS-3 Parent/Primary Caregiver (Preschool)
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                SRS-2 Parent Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BASC-3 Parent Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BASC-3 College
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <!-- INFORMANT -->
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                SRS-2 Other Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BASC-3 Teacher Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BAARS Informant Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 10 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                MIGDAS Informant Report
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+
+                            <div class="symptom-inventory-row">
+                              <div class="symptom-inventory-name">
+                                BRIEF-A Informant
+                              </div>
+                              <div class="symptom-inventory-status not-started">
+                                Not Started
+                              </div>
+                              <div class="symptom-inventory-time">
+                                Approximately 15 minutes
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card item-acc" id="accordion-item-4">
+                <div class="acc-flex">
+                  <div class="acc-left">
+                    <div class="left-inner">
+                      <div class="acc-number acc-purple-bg">
+                        <div>4</div>
+                      </div>
+                      <div class="big-icon bi-purple-bg">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          class="image-370"
+                          decoding="async"
+                          loading="lazy"
+                          src="images/icons8-screen-50.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc-right">
+                    <div class="acc-header" data-accordion-trigger="">
+                      <div>
+                        <h5 class="heading-300">
+                          <strong> Technology Readiness </strong>
+                        </h5>
+                        <div class="text-block-343">
+                          Make sure you're prepared for a successful virtual
+                          evaluation.
+                        </div>
+                      </div>
+                      <div class="div-block-950">
+                        <div class="text-block-350 yellow-badge">
+                          4 of 6 Complete
+                        </div>
+                        <button
+                          aria-controls="accordion-panel-4"
+                          aria-expanded="false"
+                          aria-label="Toggle Technology Readiness"
+                          class="chev acc-toggle"
+                          id="accordion-toggle-4"
+                          type="button"
+                        >
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            class="image-371"
+                            decoding="async"
+                            loading="lazy"
+                            src="images/icons8-angle-down-26.png"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      aria-labelledby="accordion-toggle-4"
+                      class="acc-content"
+                      hidden=""
+                      id="accordion-panel-4"
+                      role="region"
+                    >
+                      <div class="div-block-774 _774-2">
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                Zoom link tested and working on my phone
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-329"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-tick-32.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                Zoom link tested and working on my computer or
+                                tablet
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-329"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-tick-32.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                I have access to two electronic devices
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-329"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-tick-32.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                I have a quiet, private space available
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                class="image-329"
+                                decoding="async"
+                                loading="lazy"
+                                src="images/icons8-tick-32.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                I have a desk, table, or counter workspace
+                                available
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step pending"></div>
+                          </div>
+                        </div>
+                        <div class="todo todo-checks">
+                          <div class="div-block-771">
+                            <div>
+                              <div>
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  class="image-373"
+                                  decoding="async"
+                                  loading="lazy"
+                                  src="images/icons8-forward-30.png"
+                                />
+                              </div>
+                            </div>
+                            <div>
+                              <h6 class="heading-298">
+                                I have received and reviewed my evaluation
+                                packet
+                              </h6>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="completeed-step pending"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="note-box note-box-2 note-book-flex">
+                        <div>
+                          <div class="text-block-345">
+                            <strong>
+                              Need help? Schedule a live technology check
+                              <br />
+                            </strong>
+                            We'll make sure everything is working correctly
+                            before your appointment.
+                          </div>
+                        </div>
+                        <div>
+                          <a class="link-block-3 link-portal-1" href="#">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              class="image-374"
+                              decoding="async"
+                              loading="lazy"
+                              src="images/icons8-calendar-50-3.png"
+                            />
+                            <div>Book Now</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-955 _955-2">
+              <div class="div-block-956">
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  class="image-372"
+                  decoding="async"
+                  loading="lazy"
+                  src="images/icons8-info-50.png"
+                />
+              </div>
+              <div>
+                <strong> Thank you! </strong>
+                Completing these steps before your evaluation helps us provide
+                you with the best possible experience.
+              </div>
+            </div>
+            <a class="link-block-3 btn-primary-1" href="#">
+              <div>Questions about your visit</div>
+            </a>
+          </div>
+          <div
+            aria-labelledby="tab-appointments"
+            class="tab-content"
+            hidden=""
+            id="appointments"
+            role="tabpanel"
+            tabindex="0"
+          >
+            <div class="card">
+              <div class="div-block-766">
+                <div>Evaluation day</div>
+              </div>
+              <div class="appointment-time">
+                <h3 class="heading-296">
+                  Friday, May 9 &mdash; starting at 9:00 AM
+                </h3>
+                <div class="text-block-343">Two back-to-back Zoom sessions</div>
+              </div>
+              <div class="session-box">
+                <a class="session" href="#">
+                  <div>
+                    <div class="title-block">
+                      <div class="div-block-768 ripple"></div>
+                      <h6 class="heading-297">Clinical interview</h6>
+                    </div>
+                    <div class="text-block-344">Dr. Beverly Huegel</div>
+                  </div>
+                  <div>
+                    <h6 class="heading-297">9:00 AM</h6>
+                    <div class="text-block-344">1 hr</div>
+                  </div>
+                </a>
+                <a class="session" href="#">
+                  <div>
+                    <div class="title-block">
+                      <div class="div-block-768 ripple"></div>
+                      <h6 class="heading-297">Cognitive testing</h6>
+                    </div>
+                    <div class="text-block-344">Testing Psychometrist</div>
+                  </div>
+                  <div>
+                    <h6 class="heading-297">
+                      <strong> 10:00 AM </strong>
+                    </h6>
+                    <div class="text-block-344">3&ndash;4 hrs</div>
+                  </div>
+                </a>
+              </div>
+              <div class="note-box">
+                <div class="text-block-345">
+                  <strong>
+                    Plan for most of the day.
+                    <br />
+                  </strong>
+                  Your evaluation includes a comprehensive developmental battery
+                  &mdash; testing typically runs 3&ndash;4 hours after the
+                  clinical interview. Tests are non-invasive and completed live
+                  over Zoom using oral questions, written tasks, and
+                  standardized procedures. Take breaks when you need them and go
+                  at your own pace.
+                </div>
+              </div>
+              <div class="note-box note-box-2">
+                <div class="text-block-345">
+                  <strong>
+                    Bringing someone with you?
+                    <br />
+                  </strong>
+                  A family member or companion is welcome during the interview
+                  portion &mdash; the neuropsychologist may ask them questions
+                  too. Once testing begins, companions are typically asked to
+                  step away.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="div-block-766 badge-yello">
+                <div>Feedback session</div>
+              </div>
+              <div class="appointment-time">
+                <h3 class="heading-296">
+                  Appt gets scheduled during your evaluation with the
+                  neuropsychologist.
+                </h3>
+                <div class="text-block-343">
+                  ~1 hr with Dr. Beverly Huegel via Zoom
+                </div>
+                <div class="text-block-346">
+                  Your neuropsychologist will walk you through results, any
+                  diagnoses, and recommendations. You'll also receive a written
+                  report after this session.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-labelledby="tab-reports"
+            class="tab-content"
+            hidden=""
+            id="reports"
+            role="tabpanel"
+            tabindex="0"
+          >
+            <div class="card">
+              <div class="div-block-766">
+                <div>Reports</div>
+              </div>
+              <div class="to-do-list">
+                <div class="todo">
+                  <div class="div-block-771">
+                    <div class="div-block-772">
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        class="image-330"
+                        decoding="async"
+                        loading="lazy"
+                        src="images/icons8-lock-50.png"
+                      />
+                    </div>
+                    <div>
+                      <h6 class="heading-298">Neuropsychological report</h6>
+                      <div class="text-block-347">
+                        Available after feedback session
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <a class="link-block-29 locked" href="#">
+                      <div>Locked</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="todo">
+                  <div class="div-block-771">
+                    <div class="div-block-772">
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        class="image-330"
+                        decoding="async"
+                        loading="lazy"
+                        src="images/icons8-lock-50.png"
+                      />
+                    </div>
+                    <div>
+                      <h6 class="heading-298">Recommendations letter</h6>
+                      <div class="text-block-347">
+                        Available after feedback session
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <a class="link-block-29 locked" href="#">
+                      <div>Locked</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a class="link-block-3 btn-primary-1" href="#">
+                <div>Questions about your visit</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget" id="aiChatWidget">
+      <button
+        class="ai-chat-toggle"
+        id="aiChatToggle"
+        type="button"
+        aria-label="Open AI Chat"
+      >
+        <span class="ai-chat-icon">💬</span>
+        <span class="ai-chat-label">Chat with us</span>
+      </button>
+
+      <div class="ai-chat-box" id="aiChatBox">
+        <div class="ai-chat-header">
+          <div>
+            <h3>Minder Memory Assistant</h3>
+            <p>Ask about evaluations, insurance, scheduling, or referrals.</p>
+          </div>
+
+          <button
+            class="ai-chat-close"
+            id="aiChatClose"
+            type="button"
+            aria-label="Close chat"
+          >
+            ×
+          </button>
+        </div>
+
+        <div class="ai-chat-body" id="aiChatBody">
+          <div class="ai-message bot">
+            <div class="ai-avatar">M</div>
+            <div class="ai-bubble">
+              Hi! I’m the Minder Memory assistant. How can I help you today?
+            </div>
+          </div>
+
+          <div class="ai-suggestions">
+            <button type="button" class="ai-suggestion">
+              Do you accept insurance?
+            </button>
+            <button type="button" class="ai-suggestion">
+              How soon can I be seen?
+            </button>
+            <button type="button" class="ai-suggestion">
+              What evaluations do you offer?
+            </button>
+          </div>
+        </div>
+
+        <div class="ai-chat-footer">
+          <form id="aiChatForm">
+            <textarea
+              id="aiChatInput"
+              placeholder="Type your question..."
+              rows="1"
+              required
+            ></textarea>
+
+            <button type="submit" id="aiChatSend">Send</button>
+          </form>
+
+          <p class="ai-chat-note">
+            This assistant provides general information and is not a medical
+            diagnosis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
