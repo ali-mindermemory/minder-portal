@@ -1090,7 +1090,10 @@ img {
   }
 
   .evaluation-type {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .date-time{
+    font-size: 14px;
   }
 
   .journey-block {
