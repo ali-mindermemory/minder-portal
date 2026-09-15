@@ -273,6 +273,9 @@ img {
 }
 
 .date-time{
+  color: #fff;
+  margin-top: 5px;
+  font-family: Montserrat, sans-serif;
   font-size:14px;
 }
 
