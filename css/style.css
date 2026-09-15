@@ -273,10 +273,20 @@ img {
 }
 
 .date-time{
-  color: #fff;
   margin-top: 5px;
   font-family: Montserrat, sans-serif;
   font-size:14px;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  color: #f7f9f5;
+  background-color: #ffffff29;
+  border: 1px solid #ffffff1f;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  font-weight: 500;
+  display: flex;
 }
 
 .journey-block {
