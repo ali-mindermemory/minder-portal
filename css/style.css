@@ -1938,6 +1938,9 @@ body.why-steps-modal-open {
 }
 
 @media (max-width: 479px) {
+  .journey-help {
+  justify-content: flex-start;
+}
   .why-steps-modal {
     padding: 10px;
   }
