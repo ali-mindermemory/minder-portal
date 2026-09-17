@@ -1713,7 +1713,9 @@ a:focus-visible {
    ========================================= */
 
 .journey-help {
-  margin-top: 22px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .why-steps-trigger {
