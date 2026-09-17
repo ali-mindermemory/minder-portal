@@ -506,8 +506,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-
-
 /* =========================================
    WHY SO MANY STEPS - Accessible modal
    ========================================= */
