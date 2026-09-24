@@ -268,6 +268,8 @@ img {
 .evaluation-type {
   color: #fff;
   margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
 }
@@ -1706,4 +1708,274 @@ a:focus-visible {
 }
 #accordion-item-4 img.image-373 {
    max-width: fit-content;
+}
+
+/* =========================================
+   WHY SO MANY STEPS - Journey modal
+   ========================================= */
+
+.journey-help {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.why-steps-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.why-steps-trigger:hover {
+  background: var(--brand-green-1);
+  border-color: var(--brand-green-1);
+  color: var(--new-brand-color);
+  transform: translateY(-1px);
+}
+
+.why-steps-trigger:focus-visible {
+  outline: 3px solid var(--brand-blue-3);
+  outline-offset: 3px;
+}
+
+.why-steps-trigger-icon {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+body.why-steps-modal-open {
+  overflow: hidden;
+}
+
+.why-steps-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .24s ease, visibility .24s ease;
+}
+
+.why-steps-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.why-steps-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 14, 39, 0.68);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.why-steps-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 640px);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 42px 42px 38px;
+  border: 1px solid rgba(10, 48, 77, 0.12);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(2, 14, 39, 0.30);
+  transform: translateY(22px) scale(.975);
+  opacity: 0;
+  transition: transform .28s cubic-bezier(.2, .8, .2, 1), opacity .22s ease;
+}
+
+.why-steps-modal.is-open .why-steps-dialog {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.why-steps-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #f4f5f6;
+  color: var(--new-brand-color);
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.why-steps-close:hover {
+  background: #e7edf0;
+  transform: rotate(4deg);
+}
+
+.why-steps-close:focus-visible {
+  outline: 3px solid var(--brand-blue-1);
+  outline-offset: 2px;
+}
+
+.why-steps-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(172, 206, 34, 0.22);
+  color: var(--new-brand-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.why-steps-kicker {
+  margin-bottom: 8px;
+  color: var(--brand-new-color-2);
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .10em;
+}
+
+.why-steps-title {
+  margin: 0 46px 18px 0;
+  color: var(--new-heading-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.why-steps-copy {
+  color: var(--neutral--gray-600);
+  font-family: Be Vietnam Pro, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.why-steps-copy p {
+  margin: 0;
+}
+
+.why-steps-copy p + p {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e7ebee;
+}
+
+@media (max-width: 767px) {
+  .journey-help {
+    margin-top: 18px;
+  }
+
+  .why-steps-trigger {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .why-steps-trigger-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+
+  .why-steps-modal {
+    padding: 16px;
+    align-items: flex-end;
+  }
+
+  .why-steps-dialog {
+    width: 100%;
+    max-height: min(82vh, 640px);
+    padding: 34px 24px 28px;
+    border-radius: 18px 18px 14px 14px;
+    transform: translateY(32px) scale(.99);
+  }
+
+  .why-steps-title {
+    margin-right: 38px;
+    font-size: 23px;
+  }
+
+  .why-steps-copy {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 479px) {
+  .journey-help {
+  justify-content: flex-start;
+}
+  .why-steps-modal {
+    padding: 10px;
+  }
+
+  .why-steps-dialog {
+    max-height: calc(100vh - 20px);
+    padding: 30px 20px 24px;
+  }
+
+  .why-steps-close {
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .why-steps-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    font-size: 21px;
+  }
+
+  .why-steps-title {
+    font-size: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why-steps-modal,
+  .why-steps-dialog,
+  .why-steps-trigger,
+  .why-steps-close {
+    transition: none;
+  }
 }

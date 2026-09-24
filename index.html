@@ -25,7 +25,7 @@
           </div>
           <div class="patient-name">
             <h4 class="heading-294">Hi, Jane</h4>
-            <div class="evaluation-type">Developmental evaluation</div>
+            <div class="evaluation-type">Evaluation</div>
             <div class="date-time">September 15, 2026 at 4:00 pm</div>
           </div>
         </div>
@@ -60,6 +60,14 @@
               <div class="step-text">REPORT</div>
             </li>
           </ol>
+
+          <div class="journey-help">
+            <button class="why-steps-trigger" id="whyStepsTrigger" type="button"
+              aria-haspopup="dialog" aria-controls="whyStepsModal">
+              <span class="why-steps-trigger-icon" aria-hidden="true">?</span>
+              <span>WHY SO MANY STEPS?</span>
+            </button>
+          </div>
         </div>
       </div>
     </aside>
@@ -241,7 +249,7 @@
 
                 <div class="acc-left">
                   <div class="left-inner">
-                    <div class="acc-number acc-purple-bg">
+                    <div class="acc-number ">
                       <div>2</div>
                     </div>
 
@@ -605,7 +613,7 @@
               <div class="acc-flex">
                 <div class="acc-left">
                   <div class="left-inner">
-                    <div class="acc-number">
+                    <div class="acc-number acc-purple-bg">
                       <div>3</div>
                     </div>
                     <div class="big-icon">
@@ -1189,6 +1197,35 @@
       </div>
     </section>
   </main>
+
+
+  <!-- Why So Many Steps Modal -->
+  <div class="why-steps-modal" id="whyStepsModal" aria-hidden="true">
+    <div class="why-steps-backdrop" data-why-steps-close></div>
+
+    <div class="why-steps-dialog" role="dialog" aria-modal="true"
+      aria-labelledby="whyStepsTitle" aria-describedby="whyStepsDescription" tabindex="-1">
+      <button class="why-steps-close" type="button" aria-label="Close explanation" data-why-steps-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="why-steps-icon" aria-hidden="true">?</div>
+      <div class="why-steps-kicker">YOUR EVALUATION JOURNEY</div>
+      <h2 class="why-steps-title" id="whyStepsTitle">Why are there so many steps?</h2>
+
+      <div class="why-steps-copy" id="whyStepsDescription">
+        <p>
+          A neuropsychological evaluation is a comprehensive process—not a single test. Each step helps your clinical
+          team understand your concerns, select the appropriate assessments, review your history and results, and
+          develop accurate, personalized recommendations.
+        </p>
+        <p>
+          Completing each step ensures your evaluation is thorough and gives you—and your care team—meaningful answers
+          about what may be affecting your thinking, learning, memory, behavior, or daily functioning.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- AI Chat Widget -->
   <div class="ai-chat-widget" id="aiChatWidget">

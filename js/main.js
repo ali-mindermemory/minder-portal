@@ -505,3 +505,88 @@ jQuery(document).ready(function ($) {
   updateEvaluationProgress();
 
 });
+
+/* =========================================
+   WHY SO MANY STEPS - Accessible modal
+   ========================================= */
+jQuery(document).ready(function ($) {
+  "use strict";
+
+  const $modal = $("#whyStepsModal");
+  const $dialog = $modal.find(".why-steps-dialog");
+  const $trigger = $("#whyStepsTrigger");
+  let $lastFocused = $();
+
+  if (!$modal.length || !$trigger.length) {
+    return;
+  }
+
+  function openWhyStepsModal() {
+    $lastFocused = $(document.activeElement);
+
+    $modal
+      .addClass("is-open")
+      .attr("aria-hidden", "false");
+
+    $("body").addClass("why-steps-modal-open");
+
+    window.setTimeout(function () {
+      $dialog.trigger("focus");
+    }, 30);
+  }
+
+  function closeWhyStepsModal() {
+    $modal
+      .removeClass("is-open")
+      .attr("aria-hidden", "true");
+
+    $("body").removeClass("why-steps-modal-open");
+
+    if ($lastFocused.length) {
+      $lastFocused.trigger("focus");
+    } else {
+      $trigger.trigger("focus");
+    }
+  }
+
+  $trigger.on("click", openWhyStepsModal);
+
+  $modal.on("click", "[data-why-steps-close]", function () {
+    closeWhyStepsModal();
+  });
+
+  $(document).on("keydown.whyStepsModal", function (event) {
+    if (!$modal.hasClass("is-open")) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeWhyStepsModal();
+      return;
+    }
+
+    if (event.key === "Tab") {
+      const $focusable = $dialog.find(
+        'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      ).filter(":visible");
+
+      if (!$focusable.length) {
+        event.preventDefault();
+        $dialog.trigger("focus");
+        return;
+      }
+
+      const first = $focusable.get(0);
+      const last = $focusable.get($focusable.length - 1);
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        $(last).trigger("focus");
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        $(first).trigger("focus");
+      }
+    }
+  });
+});
