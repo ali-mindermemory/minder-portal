@@ -317,7 +317,7 @@ img {
   flex: 0 0 1px;
   width: 1px;
   height: 22px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .appointment-banner-zoom {
@@ -328,9 +328,8 @@ img {
   flex: 0 0 auto;
   min-height: 28px;
   padding: 5px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 7px;
-  background: rgba(255, 255, 255, 0.11);
+  background: rgb(0 0 0 / 23%);
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
@@ -339,6 +338,12 @@ img {
   text-decoration: none;
   white-space: nowrap;
   transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.appointment-banner-zoom:hover {
+    background: var(--brand-green-1);
+    border-color: var(--brand-green-1);
+    color: var(--new-brand-color);
+    transform: translateY(-1px);
 }
 
 .appointment-banner-zoom-icon {
