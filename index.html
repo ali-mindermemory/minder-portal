@@ -26,7 +26,20 @@
           <div class="patient-name">
             <h4 class="heading-294">Hi, Jane</h4>
             <div class="evaluation-type">Evaluation</div>
-            <div class="date-time">September 15, 2026 at 4:00 pm</div>
+            <div class="date-time appointment-banner">
+              <span class="appointment-banner-date">September 15, 2026 at 4:00 pm</span>
+              <span class="appointment-banner-divider" aria-hidden="true"></span>
+              <!-- Replace the href below with the patient's real Zoom meeting URL. -->
+              <a class="appointment-banner-zoom" href="https://zoom.us/j/REPLACE_WITH_MEETING_ID" target="_blank"
+                rel="noopener noreferrer" aria-label="Join evaluation on Zoom">
+                <svg class="appointment-banner-zoom-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M4.75 6.5h9.5A2.75 2.75 0 0 1 17 9.25v5.5a2.75 2.75 0 0 1-2.75 2.75h-9.5A2.75 2.75 0 0 1 2 14.75v-5.5A2.75 2.75 0 0 1 4.75 6.5Zm13.55 3.35 2.17-1.55A.95.95 0 0 1 22 9.07v5.86a.95.95 0 0 1-1.53.77l-2.17-1.55v-4.3Z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>Join Zoom</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="journey-block">
@@ -62,8 +75,8 @@
           </ol>
 
           <div class="journey-help">
-            <button class="why-steps-trigger" id="whyStepsTrigger" type="button"
-              aria-haspopup="dialog" aria-controls="whyStepsModal">
+            <button class="why-steps-trigger" id="whyStepsTrigger" type="button" aria-haspopup="dialog"
+              aria-controls="whyStepsModal">
               <span class="why-steps-trigger-icon" aria-hidden="true">?</span>
               <span>WHY SO MANY STEPS?</span>
             </button>
@@ -1203,8 +1216,8 @@
   <div class="why-steps-modal" id="whyStepsModal" aria-hidden="true">
     <div class="why-steps-backdrop" data-why-steps-close></div>
 
-    <div class="why-steps-dialog" role="dialog" aria-modal="true"
-      aria-labelledby="whyStepsTitle" aria-describedby="whyStepsDescription" tabindex="-1">
+    <div class="why-steps-dialog" role="dialog" aria-modal="true" aria-labelledby="whyStepsTitle"
+      aria-describedby="whyStepsDescription" tabindex="-1">
       <button class="why-steps-close" type="button" aria-label="Close explanation" data-why-steps-close>
         <span aria-hidden="true">&times;</span>
       </button>
