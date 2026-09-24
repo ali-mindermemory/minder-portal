@@ -329,7 +329,7 @@ img {
   min-height: 28px;
   padding: 5px 9px;
   border-radius: 7px;
-  background: rgb(0 0 0 / 23%);
+  background: var(--new-brand-color);
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
@@ -343,7 +343,6 @@ img {
     background: var(--brand-green-1);
     border-color: var(--brand-green-1);
     color: var(--new-brand-color);
-    transform: translateY(-1px);
 }
 
 .appointment-banner-zoom-icon {
