@@ -1081,6 +1081,7 @@ img {
   }
 
   .div-block-765 {
+    display: none;
     flex-flow: row;
     justify-content: space-between;
   }
