@@ -1264,6 +1264,20 @@ img {
   .div-block-956 {
     width: 100px;
   }
+
+
+  .date-time.appointment-banner {
+  padding: 5px 6% 5px 6px;
+}
+.date-time{
+  font-size: 12px;
+}
+
+.appointment-banner-divider {
+  display: none;
+}
+
+
 }
 
 /* Page-specific accordion states from the supplied HTML. */
