@@ -285,7 +285,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .date-time {
@@ -368,6 +368,7 @@ img {
 }
 
 .heading-295 {
+  display: none;
   color: #d4d4d4;
   margin-top: 0;
   margin-bottom: 0;
@@ -376,6 +377,7 @@ img {
 }
 
 .div-block-765 {
+  display: none;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   flex-flow: row;
@@ -1788,7 +1790,7 @@ a:focus-visible {
 .journey-help {
   margin-top: 10px;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .why-steps-trigger {
