@@ -52,6 +52,7 @@ a {
 }
 
 ol.div-block-765 {
+  display: none;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -1081,7 +1082,6 @@ img {
   }
 
   .div-block-765 {
-    display: none;
     flex-flow: row;
     justify-content: space-between;
   }
